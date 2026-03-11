@@ -17,5 +17,5 @@ else:
 if preco:
     print(f"O preço do CD é R$ {preco:.2f}")
 else:
-
     print("Cor inválida!")
+
