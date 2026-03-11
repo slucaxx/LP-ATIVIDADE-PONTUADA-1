@@ -1,6 +1,8 @@
 import os
 os.system("cls")
 
+# ENTRADA
+print("----------LOJA DE CDS--------")
 cor = input("Digite a cor do CD (Verde, Azul, Amarelo, Vermelho): ")
 
 if cor == "verde":
@@ -19,3 +21,4 @@ if preco:
 else:
     print("Cor inválida!")
 
+print("========FIM=========")
