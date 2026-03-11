@@ -10,9 +10,11 @@ nota2=float(input("digite sus segunda nota: "))
 media=(nota1+nota2) /2
 
 if media >= 6.00:
-    print("PARABENS,você está aprovado")
+    print(f"PARABENS,você está aprovado, sua media é {media}")
 elif media == 4.00:
-    print("PARABENS,você foi aprovado por pouco")
+    print(f"PARABENS,você foi aprovado por pouco,sua media é {media}")
 else:
-    print("QUE PENA,você está reprovado")
+    print(f"QUE PENA,você está reprovado,sua media é {media}")
+
+print("=========FIM===========")
     
