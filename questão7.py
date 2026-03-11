@@ -6,10 +6,10 @@ os.system("cls")
 print("------- ANALISE DE PRODUTOS -------")
 
 nome = input("Digite o nome do produto: ")
-quantidade = int(input("digite a quantidade desejada : "))
+quantidade = int(input("digite a quantidade desejada: "))
 preco = float(input("digite o Preço do profuto: "))
 
-total_bruto = quantidade * preco
+total = quantidade * preco
 
 if quantidade <= 5:
     percentual = 2 / 100
@@ -19,11 +19,12 @@ else:
     percentual = 5 / 100
 
 
-valor_do_desconto = total_bruto * percentual
-total_a_pagar = total_bruto - valor_do_desconto
+valord = total * percentual
+total_pa = total - valord
 
 print(f"Produto: {nome}")
 print(f"Você escolheu {quantidade} unidades.")
 print(f"Desconto : {percentual*100}%")
-print(f"Total a pagar: R$ {total_a_pagar:.2f}")
+print(f"Total a pagar: R$ {total_pa:.2f}")
     
+
