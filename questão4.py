@@ -10,36 +10,39 @@ Maça        |      R$ 1,80 POR KG  |   R$ 1,50 POR KG  |
 """)
 
 
-kg_morango = float(input("Digite a quantidade de morangos (Kg): "))
-kg_maca = float(input("Digite a quantidade de maçãs (Kg): "))
+kg_mo = float(input("Digite a quantidade de morangos (Kg): "))
+kg_maça = float(input("Digite a quantidade de maçãs (Kg): "))
 
 
-if kg_morango <= 5:
-    preco_morango = 2.50
+if kg_mo <= 5:
+     pre_mo = 2.50
 else:
-    preco_morango = 2.20
+    pre_mo = 2.20
 
-if kg_maca <= 5:
-    preco_maca = 1.80
+if kg_maça <= 5:
+    pre_maça = 1.80
 else:
-    preco_maca = 1.50
+    preco_maça = 1.50
 
-total_morango = kg_morango * preco_morango
-total_maca = kg_maca * preco_maca
+to_mo = kg_mo * pre_mo
+to_maca = kg_maça * pre_maça
 
-valor_bruto = total_morango + total_maca
-peso_total = kg_morango + kg_maca
+va_total = to_mo + to_maca
+peso_total = kg_mo + kg_maça
 
-if peso_total > 10 or valor_bruto > 15.00:
-    desconto = valor_bruto * 0.10
-    valor_final = valor_bruto - desconto
-    print(f"\nDesconto de 10% aplicado! (R$ {desconto:.2f})")
+if peso_total > 10 or va_total > 15.00:
+    desconto = va_total * 0.10
+    valor_final = va_total - desconto
+    print(f"você tem um desconto de 10% (R$ {desconto:.2f})")
 else:
-    valor_final = valor_bruto
-    print("\nSem descontos adicionais aplicados.")
+    valor_final = va_total
+    print("Sem descontos")
 
 # SAÍDA
-print(f"Peso total: {peso_total:.22f} Kg")
+print(f"Peso total: {peso_total:.2f} Kg")
 print(f"Valor Total a Pagar: R$ {valor_final:.2f}")
+
+print("==========FIM==========")
+
 
 
