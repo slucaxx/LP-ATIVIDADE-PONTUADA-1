@@ -1,4 +1,5 @@
-
+import os
+os.system("cls")
 
 cor = input("Digite a cor do CD (Verde, Azul, Amarelo, Vermelho): ")
 
@@ -16,4 +17,5 @@ else:
 if preco:
     print(f"O preço do CD é R$ {preco:.2f}")
 else:
+
     print("Cor inválida!")
